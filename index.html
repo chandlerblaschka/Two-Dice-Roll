@@ -3,40 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penny Flip Game</title>
+    <title>Two Dice Roll</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <main>
-        <H1>Penny Flip Game</H1>
+        <H1>Roll of the Dice</H1>
         <div>
             <!--<div>Penny Image Display, Button Controls, and Status Message</div>-->
             <div>
-                <img id="penny-image" src=".\assets\images\penny-heads.jpg">
+                <img id="dice-one" src=".\assets\images\dice\dice1.png">
+                <img id="dice-two" src=".\assets\images\dice\dice2.png">
             </div>
             <div class="controls">
-                <button id="flip">Flip The Penny!</button>    
-                <button id="clear">Clear Scorecard</button>    
+                <button id="roll">Roll the dice!</button>    
+                <button id="clear">Clear Data</button>    
             </div>
             <h3 class="message-container">Let's Get Rolling!</h3>
+            <h2 class= "message-container" id="totalRolls">You have rolled 0 times.</h2>
+            <h2 class= "message-container" id="doubles">You have rolled doubles 0 times.</h2>
             <hr>
             <div>
-                <h2>Scoreboard</h2>
+                <h2>Data</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Number of Heads</th>
-                            <th>Percentage Heads</th>
-                            <th>Number of Tails</th>
-                            <th>Percentage Tails</th>
+                            <th></th>
+                            <th>Number of 2's</th>
+                            <th>Number of 3's</th>
+                            <th>Number of 4's</th>
+                            <th>Number of 5's</th>
+                            <th>Number of 6's</th>
+                            <th>Number of 7's</th>
+                            <th>Number of 8's</th>
+                            <th>Number of 9's</th>
+                            <th>Number of 10's</th>
+                            <th>Number of 11's</th>
+                            <th>Number of 12's</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="heads">0</td>
-                            <td id="heads-percent">0%</td>
-                            <td id="tails">0</td>
-                            <td id="tails-percent">0%</td>!
+                            <td>Times Rolled</td>
+                            <td id="twos">0</td>
+                            <td id="threes">0</td>
+                            <td id="fours">0</td>
+                            <td id="fives">0</td>
+                            <td id="sixes">0</td>
+                            <td id="sevens">0</td>
+                            <td id="eights">0</td>
+                            <td id="nines">0</td>
+                            <td id="tens">0</td>
+                            <td id="elevens">0</td>
+                            <td id="twelves">0</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Percent Rolled</td>
+                            <td id="twos-percent">0%</td>
+                            <td id="threes-percent">0%</td>
+                            <td id="fours-percent">0%</td>
+                            <td id="fives-percent">0%</td>
+                            <td id="sixes-percent">0%</td>
+                            <td id="sevens-percent">0%</td>
+                            <td id="eights-percent">0%</td>
+                            <td id="nines-percent">0%</td>
+                            <td id="tens-percent">0%</td>
+                            <td id="elevens-percent">0%</td>
+                            <td id="twelves-percent">0%</td>
                         </tr>
                     </tbody>
                 </table>
